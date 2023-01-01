@@ -12,4 +12,4 @@ Antes de começar a macro, o usuário confirma se realmente deseja executá-la, 
 
 É importante lembrar que, no início, os dados das tabelas são limpos antes de colarmos as novas informações
 
-Vídeo do código em funcionamento: https://youtu.be/altz0-weJkk
+Vídeo do código em funcionamento: https://youtu.be/CEzgpU962FY
