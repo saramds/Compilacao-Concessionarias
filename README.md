@@ -10,6 +10,6 @@ O objetivo é que a macro filtre as vendas de cada concessionária e copie e col
 
 Antes de começar a macro, o usuário confirma se realmente deseja executá-la, por meio de uma MsgBox, e também informa se deseja compilar as vendas dos carros novos ou usados, por meio de uma InputBox. 
 
-É importante lembrar que, no início, os dados das tabelas são limpos antes de colarmos as novas informações
+É importante lembrar que, no início, os dados das tabelas são limpos antes de colarmos as novas informações.
 
 Vídeo do código em funcionamento: https://youtu.be/CEzgpU962FY
