@@ -59,19 +59,25 @@ verificacao_inicial:
         
         ult_linha = Range("A1").End(xlDown).Row
         
-'Copia e cola as informações
+'Copia as informações
         
         Range("A1:F" & ult_linha).Copy
         
         nome_aba = Mid(concessionaria, 7) & " - " & tipo & "s"
+
+'Seleciona a respectiva aba
         
         Sheets(nome_aba).Activate
+
+'Cola as informações
         
         Range("A1").PasteSpecial
         
         Sheets("Concessionárias").Activate
         
     Next
+
+'Volta para a aba principal
 
     Sheets("Resumo").Activate
     
