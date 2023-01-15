@@ -1,9 +1,11 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Sub compilacao_concessionarias()
 
-'Confirma se o usuário realmente deseja executar a macro
+'Confirma se o usuÃ¡rio realmente deseja executar a macro
 
-resposta = MsgBox("Você deseja executar essa macro?", vbYesNo)
+resposta = MsgBox("VocÃª deseja executar essa macro?", vbYesNo)
+    
+'Se a resposta for positiva 
 
 If resposta = 6 Then
 
@@ -21,13 +23,13 @@ If resposta = 6 Then
     
     Next
     
-'Verifica se o usuário inseriu os dados corretamente
+'Verifica se o usuÃ¡rio inseriu os dados corretamente
 
 verificacao_inicial:
 
-'Captura a informação do tipo dos carros
+'Captura a informaÃ§Ã£o do tipo dos carros
 
-    tipo = InputBox("Você deseja compilar os carros novos ou usados?", "Tipo dos Carros", "Novo/Usado")
+    tipo = InputBox("VocÃª deseja compilar os carros novos ou usados?", "Tipo dos Carros", "Novo/Usado")
 
     If tipo <> "Novo" And tipo <> "Usado" Then
     
@@ -37,9 +39,9 @@ verificacao_inicial:
     
     End If
     
-'Captura a informação dos nomes das unidades de concessionárias
+'Captura a informaÃ§Ã£o dos nomes das unidades de concessionÃ¡rias
 
-    Sheets("Concessionárias").Activate
+    Sheets("ConcessionÃ¡rias").Activate
 
     For linha = 2 To 9
     
@@ -53,11 +55,11 @@ verificacao_inicial:
         
         ActiveSheet.Range("$A$1:$F$1600").AutoFilter Field:=6, Criteria1:=tipo
         
-'Descobre o número da última linha
+'Descobre o nÃºmero da Ãºltima linha
         
         ult_linha = Range("A1").End(xlDown).Row
         
-'Copia e cola as informações
+'Copia e cola as informaÃ§Ãµes
         
         Range("A1:F" & ult_linha).Copy
         
@@ -67,7 +69,7 @@ verificacao_inicial:
         
         Range("A1").PasteSpecial
         
-        Sheets("Concessionárias").Activate
+        Sheets("ConcessionÃ¡rias").Activate
         
     Next
 
